@@ -1,1 +1,1 @@
-docker build -t ubuntu-base .
+docker build -t jenkins-arm .
