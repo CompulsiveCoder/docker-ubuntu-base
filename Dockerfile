@@ -1,6 +1,7 @@
 # Credit: https://github.com/djdefi/rpi-jenkins/blob/master/Dockerfile
 
-FROM resin/rpi-raspbian:latest
+#FROM resin/rpi-raspbian:latest
+FROM arm32v7/ubuntu
 
 # Get system up to date and install deps.
 RUN apt-get update; apt-get -y upgrade; apt-get --yes install \
