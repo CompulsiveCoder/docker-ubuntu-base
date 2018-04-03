@@ -7,9 +7,11 @@ RUN apt-get update; apt-get -y upgrade; apt-get --yes install \
     apt-transport-https \
     ca-certificates \
     curl \
+    git \
     gnupg2 \
     software-properties-common \ 
     libapparmor-dev && \
+    sshpass && \
     apt-get clean && apt-get autoremove -q && \
     rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man /tmp/*
 
